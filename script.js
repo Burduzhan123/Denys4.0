@@ -1,13 +1,7 @@
-const condition = 2023
+const year = 2032
 
-switch (condition){
-    case 2023:
-        console.log('Leap year');
-        break;
-    case 2022:
-        console.log('Not leap year');
-        break;
-    case 2021:
-        console.log('Not leap year');
-        break;
+if (year % 4 === 0 || year % 100 === 0 && year % 400 === 0){
+    console.log(' is leap');
+}else{
+    console.log('not leap');
 }
